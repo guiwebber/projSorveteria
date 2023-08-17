@@ -1,0 +1,67 @@
+.divImgBanner,
+.texts {
+    width: 50%;
+    height: 450px;
+}
+
+.divImgBanner img {
+    width: 100%;
+    height: 100%;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    text-align: center;
+}
+
+.texts h2 {
+    font-size: 2rem;
+}
+
+.texts p {
+    font-weight: 500;
+}
+
+.texts h4 {
+    margin-bottom: 20px;
+}
+
+.banner-sabores {
+    display: flex;
+    flex-direction: row;
+}
+
+.invMob {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .texts {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .invMob {
+        display: block;
+    }
+
+    .inv {
+        display: none;
+    }
+
+    .banner-sabores {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .divImgBanner,
+    .texts {
+        width: 100%;
+    }
+
+}
